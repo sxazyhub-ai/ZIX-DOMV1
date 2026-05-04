@@ -19,7 +19,7 @@ local title = ("AtlasX Hub| Bienvenido %s"):format(displayName)
 local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/sxazyhub-ai/librerya/refs/heads/main/librery.lua"))()
 
 local window = library:AddWindow(title, {
-    main_color = Color3.fromRGB(0, 255, 0),
+    main_color = Color3.fromRGB(0, 0, 0),
     min_size = Vector2.new(800, 870),
     can_resize = true,
 })
