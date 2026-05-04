@@ -9,9 +9,13 @@ if not displayName or displayName == "" then
     displayName = player.Name
 end
 
-local title = ("Atlas Hub - %s"):format(displayName)
+local title = ("ZIX-DOM - %s"):format(displayName)
 
-local window = library:AddWindow("https://raw.githubusercontent.com/MysteryHubRoblox/Designed-Libraries/refs/heads/main/Library%20TONY", {
+local library = loadstring(game:HttpGet(
+    "https://raw.githubusercontent.com/MysteryHubRoblox/Designed-Libraries/refs/heads/main/Library%20TONY"
+))()
+
+local window = library:AddWindow(title, {
     title_bar = {Color3.fromRGB(180, 0, 0), Color3.fromRGB(100, 0, 0), Color3.fromRGB(30, 0, 0)},
     title_bar_transparency = 0.2,
     background = {Color3.fromRGB(10, 0, 0), Color3.fromRGB(30, 0, 0), Color3.fromRGB(60, 0, 0)},
@@ -2977,6 +2981,3 @@ Credits:AddLabel("")
 Credits:AddLabel("")
 Credits:AddLabel("")
 Credits:AddLabel("")
-Credits:AddButton("", function()
-setclipboard("")
-        end)
