@@ -1,20 +1,15 @@
 local Players = game:GetService("Players")
 local VirtualUser = game:GetService("VirtualUser")
-
-local Player = Players.LocalPlayer
-
-local Players = game:GetService("Players")
-local player = Players.LocalPlayer
-
 local SoundService = game:GetService("SoundService")
+
+local player = Players.LocalPlayer
 
 local displayName = player.DisplayName
 if not displayName or displayName == "" then
     displayName = player.Name
 end
-local Players = game:GetService("Players")
-local player = Players.LocalPlayer
-local title = ("AtlasX Hub| Bienvenido %s"):format(displayName)
+
+local title = ("Atlas Hub - %s"):format(displayName)
 
 local window = library:AddWindow("https://raw.githubusercontent.com/MysteryHubRoblox/Designed-Libraries/refs/heads/main/Library%20TONY", {
     title_bar = {Color3.fromRGB(180, 0, 0), Color3.fromRGB(100, 0, 0), Color3.fromRGB(30, 0, 0)},
