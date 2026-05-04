@@ -16,12 +16,14 @@ local Players = game:GetService("Players")
 local player = Players.LocalPlayer
 local title = ("AtlasX Hub| Bienvenido %s"):format(displayName)
 
-local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/sxazyhub-ai/librerya/refs/heads/main/librery.lua"))()
-
-local window = library:AddWindow(title, {
-    main_color = Color3.fromRGB(0, 0, 0),
-    min_size = Vector2.new(800, 870),
-    can_resize = true,
+local window = library:AddWindow("https://raw.githubusercontent.com/MysteryHubRoblox/Designed-Libraries/refs/heads/main/Library%20TONY", {
+    title_bar = {Color3.fromRGB(180, 0, 0), Color3.fromRGB(100, 0, 0), Color3.fromRGB(30, 0, 0)},
+    title_bar_transparency = 0.2,
+    background = {Color3.fromRGB(10, 0, 0), Color3.fromRGB(30, 0, 0), Color3.fromRGB(60, 0, 0)},
+    background_transparency = 0.1,
+    main_color = Color3.fromRGB(220, 0, 0),
+    min_size = Vector2.new(400, 300),
+    can_resize = true
 })
 
 local MainTab = window:AddTab("Main")
