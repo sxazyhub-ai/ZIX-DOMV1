@@ -9,7 +9,7 @@ if not displayName or displayName == "" then
     displayName = player.Name
 end
 
-local title = ("ZIX-DOM - %s"):format(displayName)
+local title = ("ZIX-DOM | bienvenido %s"):format(displayName)
 
 local library = loadstring(game:HttpGet(
     "https://raw.githubusercontent.com/MysteryHubRoblox/Designed-Libraries/refs/heads/main/Library%20TONY"
